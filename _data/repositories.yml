@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - tobirohrer
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - tobirohrer/gan-pretraining-ae
+  - tobirohrer/reinforcement-learning-heat-pump
