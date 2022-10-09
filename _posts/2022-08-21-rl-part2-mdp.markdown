@@ -9,6 +9,8 @@ categories: RL
 
 Markov decision process (MDP) serve as a mathematical formalism of sequential decision making problems. It is used to formally define environments in reinforcement learning. The terms MDP and environment are often used interchangeably. Here, the term MDP is used when describing the formal properties and the term environment when referring to implementation aspects of reinforcement learning. In the following, the components which are used to define the MDP are listed and described in more detail.
 
+# Elements of a MDP
+
 ## State Space
 The _state space_ defines the possible states that the MDP can possibly evolve into. A state is used to describe the MDP at a given time step. Let's take chess as an example: One state would contain information of every single piece on the board. The state space would contain every possible (legal) positioning of chess pieces (according to the "Shannon number", the state space of chess contains around $$10^{120}$$ different states).  
 
@@ -16,7 +18,7 @@ A fundamental concept of states in MDPs is the _Markov property_, which defines 
 
 $$P[S_{t+1}|S_t] = P[S_{t+1}|S_1, S_2..., S_t]$$
 
-Therefore, in order for the Markov Property to not be violated, a state must “include information about all aspects of the past agent–environment interaction that make a difference for the future” -- <cite>R. S. Sutton and A. G. Barto</cite>. 
+Therefore, in order for the Markov Property to not be violated, a state must “include information about all aspects of the past agent–environment interaction that make a difference for the future”(<cite>R. S. Sutton and A. G. Barto</cite>). 
 
 There is two types of special states. First, there is _initial states_ which are often denoted as $$S_0$$. Second, there is _terminal states_ which mark the end of an episode. Terminal states are usually denoted with a capital T, like: $$S_T$$. An interaction between environment and agent which stretches from $$S_0, A_0, S_1, A_1..., S_T , A_T$$ is called an _episode_. Note that not all MDPs have terminal states. Those that have terminal states are often referred to as _episodic MDPs_, whereas those without any terminal states are referred to as _continuing MDPs_.
 
@@ -44,7 +46,36 @@ The sum is discounted by factor $$\gamma \in [0,1]$$ which is used to define how
 
 ## Transition Probability
 
-work in progress :)
+As mentioned before, taking an action causes the MDP to transfer into a new state. In _stochastic environments_, random
+dynamics are involved during state transitions. Meaning, given the same state $$s$$ and action $$a$$, the MDL can transition into a set of different possible successor states and experience a different reward. The transition probability
+
+$$p(s^\prime, r|a,s) = P[S_{t+1}=s^\prime, R_t=r| A_{t}=a,S_{t}=s]$$
+
+defines the probability, that the MDP evolves into the successor state $$s^\prime$$ and experiences reward $$r$$, if the agent chooses action $$a$$ in state $$s$$. In contrast, in _deterministic environments_ no random dynamics are involved during state transition. This leads to the fact that the transition function exclusively takes the value 0 or 1.
+
+# The Agent Side of a MDP
+
+The components described above define the MDP which serves as mathematical foundation for an environment in reinforcement learning. Mostly we are interested in finding (or training) an agent which chooses (good) actions which maximise rewards. An agent chooses those actions based on a _policy_ $$\pi$$. More formally, $$\pi$$ specifies the behaviour of an agent by defining a probability distribution of actions based on the current state:
+
+$$\pi(a|s) = P[A_{t}=a| S_{t}=s].$$
+
+When talking about _deep_ reinforcement learning, the policy $$\pi$$ is represented by a _deep_ neural network. A policy, which acts optimally for a given MDP is denoted as _optimal policy_ $$\pi^*$$. To be able to evaluate and find policies that are optimal, value functions can be used to assess "how good it is for the agent to be in a given state"(<cite>R. S. Sutton and A. G. Barto</cite>). The so called _state-value function_ $$V_{\pi}(s)$$ defines the expected future return by being in state $$s$$ and following policy $$\pi$$ from there on: 
+
+$$V_{\pi}(s) =  E_{\pi}[G_{t} | S_{t} = s].$$
+
+Likewise, the _optimal_ state-value function $$V_{*}(s)$$ determines the expected future return by being in state $$s$$ and by acting _optimally_ and not according to a certain policy $$\pi$$ from there.
+
+Derived from the state-value function, the _action-value_ function $$Q_{\pi}(s, a)$$ estimates the return when taking an action in a particular state and following policy $$\pi$$ afterwards:
+
+$$ Q_{\pi}(s, a) =  E_{\pi}[G_{t} | S_{t} = s, A_{t} = a].$$
+
+The action-values are commonly named _Q-values_. If assumed to act optimally after taking action $$a$$, the action-value function is denoted as $$Q_{*}(s, a)$$.
+
+In case the optimal action-value function $$Q_{*}(s, a)$$ is known, acting optimally can be done by simply following a greedy policy, which chooses the action which maximizes $$Q_{*}(s, a)$$ in each time step: 
+
+$$\pi^*= \underset{a}{\arg\max}\:Q_{*}(s,a).$$
+
+Or in simple words, acting optimally can be done by choosing the best possible action in a given state. 
 
 ## Sources:
 
