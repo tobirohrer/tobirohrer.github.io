@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Tobias Rohrer # the website title (if blank, full name will be used instead)
 first_name: Tobias
 middle_name:
 last_name: Rohrer
@@ -22,7 +22,6 @@ url: https://tobirohrer.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
@@ -84,14 +83,14 @@ keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: # your stackoverflow id
-kaggle_id: # your kaggle id
+kaggle_id: tobirohrer # your kaggle id
 lastfm_id: # your lastfm id
 spotify_id: # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: # your instagram id
 facebook_id: # your facebook id
-discord_id: # your discord id (18-digit unique numerical identifier)
+discord_id: tobirohrer#8654 # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
 
@@ -102,7 +101,7 @@ contact_note: >
 google_analytics:  # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
-google_site_verification:  # your google-site-verification ID (Google Search Console)
+google_site_verification: BOXF2EaZ3ZyZT4DDc_cXDgWFmyePsoe0KukVNbQBnKo# your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
@@ -187,6 +186,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-twitter-plugin
   - jemoji
+  - jekyll-seo-tag
 
 # Sitemap settings
 defaults:
@@ -227,8 +227,8 @@ display_tags: ['RL'] # this tags will be dispalyed on the front page of your blo
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Rohrer]
+  first_name: [Tobias]
 
   style: apa
   locale: en
