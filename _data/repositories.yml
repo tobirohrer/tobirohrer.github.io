@@ -4,3 +4,4 @@ github_users:
 github_repos:
   - tobirohrer/gan-pretraining-ae
   - tobirohrer/reinforcement-learning-heat-pump
+  - tobirohrer/building-energy-storage-simulation
