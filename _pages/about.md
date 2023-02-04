@@ -16,6 +16,4 @@ social: true  # includes social icons at the bottom of the page
 
 👋 Thats me, Tobi.
 
-I am currently working at the hessian center for artificial intelligence ([hessian.ai](https://hessian.ai/)).
-
-In addition to this I am currently looking for a concrete research topic for my Ph.D. There, I would like to research in the field of deep reinforcement learning and apply it to control complex energy or heating systems.
+I am currently working at the Fraunhofer Institute for Solar Energy Systems. There, I am working on a simulation and control of energy systems to investigate the optimal integration of energy storages.
