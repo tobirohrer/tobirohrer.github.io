@@ -16,4 +16,4 @@ social: true  # includes social icons at the bottom of the page
 
 👋 Thats me, Tobi.
 
-I am currently working at the Fraunhofer Institute for Solar Energy Systems. There, I am working on a simulation and control of energy systems to investigate the optimal integration of energy storages.
+I am currently working at the Fraunhofer Institute for Solar Energy Systems. There, I am working on simulation and control of energy systems to investigate the optimal integration of energy storages.
