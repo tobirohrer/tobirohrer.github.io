@@ -9,9 +9,17 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-# Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+# Angaben gemäß § 5 TMG
 
-Tobias Rohrer
+## Verantwortlich für den Inhalt:
+
+
+<p>Tobias Rohrer</p>
+<p>Günterstalstraße 78</p>
+<p>79100 Freiburg</p>
+
+
+## Kontakt
 
 E-Mail: tobias [dot] rohrer [at] outlook [dot] com
 
