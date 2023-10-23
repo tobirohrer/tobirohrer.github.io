@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Building Energy Storage Simulation
-description: An example problem for (deep) reinforcement learning.
+title: Energy Storage Simulation
+description: A playground simulation to explore advanced control algorithms like (deep) reinforcement learning and model predictive control.
 img: /assets/img/building_simulation.png
 importance: 1
 github: https://github.com/tobirohrer/building-energy-storage-simulation
-category: fun
 redirect: https://github.com/tobirohrer/building-energy-storage-simulation
 ---
 
