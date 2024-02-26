@@ -1,0 +1,35 @@
+// Portfolio item 1 modal popup
+#stadtwerkeModal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .close-modal(data-bs-dismiss='modal')
+                img(src='assets/img/close-icon.svg', alt='Close modal', width='50px')
+            .container
+                .row.justify-content-center
+                    .col-lg-8
+                        .modal-body
+                            // Project details
+                            h3.text-uppercase Vorhersage von Elektrizitätslasten
+                            p.item-intro.text-muted 
+                            img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/stadtwerke.jpg', alt='...', width='400px')
+                            p Um eine stabile Energieversorgung zu gewährleisten, sind Energieversorger auf Prognosen von Elektrizitätslasten, sowie auf Prognosen der Erzeugung durch erneuerbare Energiequellen angewiesen. Die Stadtwerke Kassel haben für die Challenge Daten von Last- und Erzeugungszeitreihen aus dem Feld zur Verfügung gestellt. Teilnehmende haben anhand dieser Daten Vorhersage-Algorithmen entwickelt.
+                            
+                            h3 Quick Facts
+                            ul.list-inline
+                                li
+                                    strong Kunde:
+                                    | hessian.ai
+                                li
+                                    strong Partner: 
+                                    | Städtische Werke Kassel, House of Energy
+                                li
+                                    strong Anzahl Teilnehmender Teams: 
+                                    | 23
+                                li
+                                    strong Anzahl Submissions: 
+                                    | 481
+
+
+                            a.btn.btn-primary.btn-xl.text-uppercase(href='https://www.kaggle.com/competitions/energy-forecasting-data-challenge')
+                                i.fas.fa-xmark.me-1
+                                | Zum Hackathon

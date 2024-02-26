@@ -1,0 +1,27 @@
+I"�<p>In reinforcement learning a so called <em>agent</em> learns to solve a task by learning from trial and error when interacting with an <em>environment</em>. This interaction is triggered by the agent by choosing an action \(A(s)\) (here, an action is denoted as function as the action to be chosen might depend on the current state). As a response to the action, the agent gets information about the new environment state \(S_{t+1}\) and a scalar reward \(R_{t+1}\). The following image shows this basic relationship between the agent and the environment:</p>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/posts/drl_basics-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/posts/drl_basics-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/posts/drl_basics-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/posts/drl_basics.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<p>The reward serves as feedback on the quality of a certain action in a given state. The goal of the agent is to maximize the sum of rewards over time.</p>
+
+<h2 id="sources">Sources:</h2>
+
+<ul>
+  <li>R. S. Sutton and A. G. Barto, Reinforcement Learning: An Introduction <a href="http://incompleteideas.net/book/the-book.html">http://incompleteideas.net/book/the-book.html</a></li>
+  <li>D. Silver, “Lecture 1: Introduction to Reinforcement Learning”, <a href="https://www.davidsilver.uk/teaching/">https://www.davidsilver.uk/teaching/</a></li>
+</ul>
+:ET

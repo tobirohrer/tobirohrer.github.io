@@ -1,0 +1,231 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Creative - Start Bootstrap Theme
+
+        style.
+          #dynamicTextContainer {
+            height: 60px; /* Set a fixed height for the container */
+            overflow: hidden; /* Ensure overflow is hidden to prevent text from showing outside the container */
+          }
+          #dynamicText {
+            display: inline-block;
+            white-space: nowrap;
+            width: 14ch; /* Width of the text area */
+            position: relative; /* Positioning for the cursor */
+          }
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap Icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
+
+        // SimpleLightbox plugin CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='#page-top') Home
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='#services') Services
+                        li.nav-item
+                            a.nav-link(href='#portfolio') Portfolio
+                        li.nav-item
+                            a.nav-link(href='#contact') Kontakt
+
+        // Masthead
+        header.masthead
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
+                    .col-lg-8.align-self-end
+                        h1.text-white.font-weight-bold Organisiere deinen Machine Learning
+                        div#dynamicTextContainer
+                            h1.text-white.font-weight-bold.title#dynamicText Hackathon
+                        hr.divider
+                    .col-lg-8.align-self-baseline
+                        p.text-white-75.mb-5
+                            | Von der Ausarbeitung der Problemstellung bis zur Umsetzung: Professionelle Organisation deines Machine Learning Hackathons durch einen Data Scientist mit einer Leidenschaft für Challenges.
+                        a.btn.btn-primary.btn-xl(href='#services') Mehr Erfahren
+                        div.light.x1 
+
+        // Services
+        section#services.page-section
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Meine Services für einen erfolgreichen Hackathon
+                hr.divider
+                .row.gx-4.gx-lg-5
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                i.bi-lightbulb.fs-1.text-primary
+                            h3.h4.mb-2 Ausarbeitung des Themas
+                            p.text-muted.mb-0 Eine gute Story ist alles. Ich unterstütze bei der Ausarbeitung und Schärfung des Themas für deinen Machine Learning Hackathons, um spannende Herausforderungen zu schaffen, die Teilnehmer begeistern.
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                i.bi-clipboard-data.fs-1.text-primary
+                            h3.h4.mb-2 Datenvorverarbeitung
+                            p.text-muted.mb-0 Ich kümmere mich um die Daten vor dem Hackathon, indem ich beispielsweise den Train-Test-Split entwerfe und eine grundlegende Vorverarbeitung der Features durchführe. Hierbei steht im Vordergrund, dass Teilnehmende eine geringe Einstiegshürde haben um an deiner Problemstellung zu arbeiten.
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                i.bi-globe.fs-1.text-primary
+                            h3.h4.mb-2 Plattform Hosting
+                            p.text-muted.mb-0 Automatische Evaluierung und Scoring der abgegebenen Lösungen? Ein Live-Leaderboard für Teilnehmende? Öffentlich für alle, oder privat für einen ausgewählten Teilnehmerkreis? Eine Online Beschreibung der Problemstellung? Alles möglich 😎
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                i.bi-heart.fs-1.text-primary
+                            h3.h4.mb-2 Moderation und Support
+                            p.text-muted.mb-0 Ich helfe bei der Präsentation der technischen Problemstellung und unterstütze die Teilnehmenden während des gesamten Hackathons. Ob durch Hacksessions, oder interaktiv auf einem Discord-Server. Ich bin für Fragen da und helfe Teilnehmenden, deine Herausforderung effizient anzugehen.
+
+        // Portfolio Grid
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                h2.text-center.mt-0 Durchgeführte Hackathons
+                hr.divider
+                .row
+                    .col-lg-6.col-sm-12.mb-12
+                        // Portfolio item 1
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#transnetModal')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/transnet.jpg', alt='...')
+                            a.portfolio-link(data-bs-toggle='modal', href='#transnetModal', style='font-family: inherit; font-weight: inherit; text-decoration: none; color: inherit;')
+                                .portfolio-caption
+                                    .portfolio-caption-heading Anomalieerkennung im europäischen Stromübertragungsnetz
+                                    .portfolio-caption-subheading.text-muted Anomalieerkennung in einem der weltweit größsten Systemen zur Echtzeitoptimierung von Energieflüssen.
+                    .col-lg-6.col-sm-12.mb-12
+                        // Portfolio item 2
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#stadtwerkeModal')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/stadtwerke.jpg', alt='...')
+                            a.portfolio-link(data-bs-toggle='modal', href='#stadtwerkeModal', style='font-family: inherit; font-weight: inherit; text-decoration: none; color: inherit;')        
+                                .portfolio-caption
+                                    .portfolio-caption-heading Vorhersage von Elektrizitätslasten
+                                    .portfolio-caption-subheading.text-muted Vorhersage von Erzeugung und Verbrauch von Elektrizität.
+                    .col-lg-4.col-sm-6.mb-4
+
+        // Contact
+        section#contact.page-section
+            .container
+                .text-center
+                h2.text-center.mt-0 Kontakt
+                hr.divider
+                .row
+                  .col-md-4.mb-3.mb-md-0.mx-auto
+                    .card.py-4.h-100.contact-card
+                      .card-body.text-center
+                        i.bi-envelope.fs-1.text-primary
+                        h4.m-0 E-Mail
+                        hr.my-4
+                        div.small.text-black-50
+                          a(href="mailto:tobias.rohrer@outlook.com") tobias.rohrer@outlook.com
+                  .col-md-4.mb-3.mb-md-0.mx-auto
+                    .card.py-4.h-100.contact-card
+                      .card-body.text-center
+                        i.bi-phone.fs-1.text-primary
+                        h4.m-0 Handynummer
+                        hr.my-4
+                        div.small.text-black-50 +49 (0) 15758727824
+
+        // Footer
+        footer.bg-light.py-5
+            .container.px-4.px-lg-5
+                .small.text-center.text-muted
+                    .row
+                        .col-md-6
+                            span.copyright Copyright &copy; Tobias Rohrer
+                        .col-md-6.quicklinks
+                            a.quicklinks-margin(href='/privacy.html') Datenschutz
+                            a(href='/impressum.html') Impressum
+
+        // Portfolio Modals
+        include includes/stadtwerke
+        include includes/transnetbw
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // SimpleLightbox plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        script.
+          var textIndex = 0;
+          var texts = ["Hackathon.", "Datathon."];
+          var currentText = texts[textIndex];
+          var textLength = currentText.length;
+          var element = document.getElementById('dynamicText');
+          var container = document.getElementById('dynamicTextContainer');
+
+          function typeText() {
+            var typedText = '';
+            var i = 0;
+
+            var typingInterval = setInterval(function() {
+              typedText += currentText[i];
+              element.innerText = typedText;
+              i++;
+
+              if (i >= textLength) {
+                clearInterval(typingInterval);
+                setTimeout(eraseText, 2000); // Wait before erasing the text
+              }
+            }, 100); // Typing animation speed
+          }
+
+          function eraseText() {
+            var text = element.innerText;
+            var eraseInterval = setInterval(function() {
+              text = text.slice(0, -1);
+              element.innerText = text;
+
+              if (text === '') {
+                clearInterval(eraseInterval);
+                textIndex = (textIndex + 1) % texts.length;
+                currentText = texts[textIndex];
+                textLength = currentText.length;
+                setTimeout(typeText, 400); // Wait before typing the next text
+              }
+            }, 100); // Erasing animation speed
+          }
+
+          typeText();
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

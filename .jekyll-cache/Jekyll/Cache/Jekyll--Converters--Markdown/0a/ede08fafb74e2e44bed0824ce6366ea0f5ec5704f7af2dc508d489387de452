@@ -1,0 +1,2 @@
+I"2<p>In reinforcement learning a so called <em>agent</em> learns to solve a task by learning from trial and error when interacting with an <em>environment</em>. This interaction is triggered by the agent by choosing an action \(A(s)\) (here, an action is denoted as function as the action to be chosen might depend on the current state). As a response to the action, the agent gets information about the new environment state \(S_{t+1}\) and a scalar reward \(R_{t+1}\). The following image shows this basic relationship between the agent and the environment:</p>
+:ET

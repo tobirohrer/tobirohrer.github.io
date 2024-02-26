@@ -1,0 +1,122 @@
+I"¼<!-- pages/projects.md -->
+<div class="projects">
+<!-- Display projects without categories --><!-- Generate cards for each project -->
+  <div class="grid"><!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="https://github.com/tobirohrer/building-energy-storage-simulation">
+      <div class="card hoverable"><figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/building_simulation-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/building_simulation-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/building_simulation-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/building_simulation.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h3 class="card-title">Energy Storage Simulation</h3>
+          <p class="card-text">A playground simulation to explore advanced control algorithms like (deep) reinforcement learning and model predictive control.</p>
+          <div class="row ml-1 mr-1 p-0"><div class="github-icon">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="https://github.com/tobirohrer/building-energy-storage-simulation"><i class="fab fa-github gh-icon"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+</div><!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="https://www.kaggle.com/competitions/energy-forecasting-data-challenge">
+      <div class="card hoverable"><figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/solar_forecasting-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/solar_forecasting-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/solar_forecasting-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/solar_forecasting.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h3 class="card-title">Energy Data Forecasting Challenge</h3>
+          <p class="card-text">A data challange to predict electricity loads and pv power generation.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div><!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="https://www.kaggle.com/competitions/ai-serving-grid-stability">
+      <div class="card hoverable"><figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/anomaly_detection-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/anomaly_detection-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/anomaly_detection-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/anomaly_detection.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h3 class="card-title">Anomaly Detection in the Electricity Grid</h3>
+          <p class="card-text">A data challange to develop anomaly detection algorithms for the european transmission grid for electricity.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div><!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="https://www.hopfenstop.de/">
+      <div class="card hoverable"><figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/hopfenstop_logo-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/hopfenstop_logo-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/hopfenstop_logo-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/hopfenstop_logo.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h3 class="card-title">HopfenStop</h3>
+          <p class="card-text">A free app which helps you find the best nearby kiosk.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+  </div></div>
+:ET

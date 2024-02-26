@@ -1,0 +1,37 @@
+// Portfolio item 2 modal popup
+#transnetModal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .close-modal(data-bs-dismiss='modal')
+                img(src='assets/img/close-icon.svg', alt='Close modal', width='50px')
+            .container
+                .row.justify-content-center
+                    .col-lg-8
+                        .modal-body
+                            // Project details
+                            h3.text-uppercase Anomalieerkennung im europäischen Stromübertragungsnetz
+                            p.item-intro.text-muted 
+                            img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/transnet.jpg', alt='...', width='400px')
+                            p Von seiner Leitwarte aus betreibt TransnetBW die PICASSO-Plattform und damit das weltweit größte System zur Echtzeit-Optimierung von Stromflüssen. Um das Funktionieren der Plattform sicherzustellen, werden Informationen zu Ungleichgewichten, Reserven, Übertragungskapazitäten und viele weitere Zeitreihen kontinuierlich überwacht. TransnetBW hat in Kooperation mit dem Fraunhofer IEE für die Challenge einen bisher unveröffentlichten Datensatz der PICASSO-Plattform zur Verfügung gestellt. In der Challenge haben Teilnehmende Algorithmen zur Anomaliedetektion im Plattformbetrieb entwickelt.
+                            h3 Quick Facts
+
+
+                            ul.list-inline
+                                li
+                                    strong Kunde:
+                                    | hessian.ai
+                                li
+                                    strong Partner: 
+                                    | TransnetBW, Fraunhofer IEE, House of Energy
+                                li
+                                    strong Anzahl Teilnehmender Teams: 
+                                    | 45
+                                li
+                                    strong Anzahl Submissions: 
+                                    | 942
+
+
+                            a.btn.btn-primary.btn-xl.text-uppercase(href='https://www.kaggle.com/competitions/ai-serving-grid-stability')
+                                i.fas.fa-xmark.me-1
+                                | Zum Hackathon
+
