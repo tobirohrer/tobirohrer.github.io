@@ -94,8 +94,32 @@ html(lang='en')
                             h3.h4.mb-2 Moderation und Support
                             p.text-muted.mb-0 Ich helfe bei der Präsentation der technischen Problemstellung und unterstütze die Teilnehmenden während des gesamten Hackathons. Ob durch Hacksessions, oder interaktiv auf einem Discord-Server. Ich bin für Fragen da und helfe Teilnehmenden, deine Herausforderung effizient anzugehen.
 
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
+        section#about-me.page-section.bg-light
+            .container
+                h2.text-center.mt-0 Über mich
+                hr.divider
+                .row
+                    .col-lg-6.col-sm-12.profile-col
+                        p.m-b2 Ich habe eine große Leidenschaft für Hackathons und Challenges. Ich selbst nehme seit über 10 Jahren an diversen Programmierwettbewerben, Hackathons und Challenges teil. Heute helfe ich selbst bei der organisation. Ein paar Hard Facts zu mir:
+                        ul
+                            li.mb-2 Mehrjährige Erfahrung als Data Scientist und Softwareentwickler
+                            li.mb-2 Ich habe ein Talent komplexe Sachverhalte einfach darzustellen
+                            li.mb-2 Berufserfahrung sohwohl in der Industrie als auch in der Forschung
+                        a.btn.btn-primary.text-uppercase.mt-4(href='/assets/cv.pdf', download='cv.pdf')
+                                    | Download CV
+                    .col-lg-6.col-sm-12.profile-col.text-center
+                        img.profile-image(src='assets/img/freelance_me.jpg', alt='...')
+                        .mb-4
+                        div.icon-container
+                            a(href='https://github.com/tobirohrer')
+                                i.bi-linkedin.fs-1.text-primary
+                        div.icon-container
+                            a(href='https://www.linkedin.com/in/tobirohrer/')
+                                i.bi-github.fs-1.text-primary
+
+
+                // Portfolio Grid
+        section#portfolio.page-section
             .container
                 .text-center
                 h2.text-center.mt-0 Durchgeführte Hackathons
@@ -103,39 +127,32 @@ html(lang='en')
                 .row
                     .col-lg-6.col-sm-12.mb-4
                         // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#transnetModal')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/transnet.jpg', alt='...')
-                            a.portfolio-link(data-bs-toggle='modal', href='#transnetModal', style='font-family: inherit; font-weight: inherit; text-decoration: none; color: inherit;')
-                                .portfolio-caption
-                                    .portfolio-caption-heading Anomalieerkennung im europäischen Stromübertragungsnetz
-                                    .portfolio-caption-subheading.text-muted Anomalieerkennung in einem der weltweit größsten Systemen zur Echtzeitoptimierung von Energieflüssen.
+                        .portfolio-item.card
+                            img.card-img-top(src='assets/img/portfolio/transnet.jpg', alt='...')
+                            .card-body
+                                h3.card-heading Anomalieerkennung im europäischen Stromübertragungsnetz
+                                .card-text.text-muted Anomalieerkennung in einem der weltweit größsten Systemen zur Echtzeitoptimierung von Energieflüssen.
+                                a.btn.btn-primary.text-uppercase.mt-4(data-bs-toggle='modal', href='#transnetModal')
+                                    | Mehr Erfahren
                     .col-lg-6.col-sm-12.mb-4
-                        // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#stadtwerkeModal')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/stadtwerke.jpg', alt='...')
-                            a.portfolio-link(data-bs-toggle='modal', href='#stadtwerkeModal', style='font-family: inherit; font-weight: inherit; text-decoration: none; color: inherit;')        
-                                .portfolio-caption
-                                    .portfolio-caption-heading Vorhersage von Elektrizitätslasten
-                                    .portfolio-caption-subheading.text-muted Vorhersage von Erzeugung und Verbrauch von Elektrizität.
-                    .col-lg-4.col-sm-6.mb-4
+                        // Portfolio item 1
+                        .portfolio-item.card
+                            img.card-img-top(src='assets/img/portfolio/stadtwerke.jpg', alt='...')
+                            .card-body
+                                h3.card-heading Vorhersage von Elektrizitätslasten
+                                .card-text.text-muted Vorhersage von Erzeugung und Verbrauch von Elektrizität für die Stadtwerke Kassel.
+                                a.btn.btn-primary.text-uppercase.mt-4(data-bs-toggle='modal', href='#stadtwerkeModal')
+                                    | Mehr Erfahren
 
         // Contact
-        section#contact.page-section
+        section#contact.page-section.bg-light
             .container
                 .text-center
                 h2.text-center.mt-0 Kontakt
                 hr.divider
                 .row
                   .col-md-4.mb-3.mb-md-0.mx-auto
-                    .card.py-4.h-100.contact-card
+                    .card.py-4.h-100
                       .card-body.text-center
                         i.bi-envelope.fs-1.text-primary
                         h4.m-0 E-Mail
@@ -143,7 +160,7 @@ html(lang='en')
                         div.small.text-black-50
                           a(href="mailto:tobias.rohrer@outlook.com") tobias.rohrer@outlook.com
                   .col-md-4.mb-3.mb-md-0.mx-auto
-                    .card.py-4.h-100.contact-card
+                    .card.py-4.h-100
                       .card-body.text-center
                         i.bi-phone.fs-1.text-primary
                         h4.m-0 Handynummer

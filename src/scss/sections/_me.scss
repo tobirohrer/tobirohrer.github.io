@@ -1,0 +1,23 @@
+.profile-image {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    border: 2px solid $green;
+    box-shadow: 0 0 0 4px #444;
+}
+
+
+.icon-container {
+  width: 75px; /* Adjust the size of the circular background for icons */
+  height: 75px; /* Adjust the size of the circular background for icons */
+  border-radius: 80%; /* Create a circular background for icons */
+  background-color: #444; /* Gray background color for icons */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px; /* Adjust the space between icons */
+}
+
+.icon-container i {
+  font-size: 24px; /* Adjust the font size of the icons */
+}

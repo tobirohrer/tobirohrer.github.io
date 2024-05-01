@@ -94,8 +94,35 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light" id="about-me">
+            <div class="container">
+                <h2 class="text-center mt-0">Über mich</h2>
+                <hr class="divider" />
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 profile-col">
+                        <p class="m-b2">Ich habe eine große Leidenschaft für Hackathons und Challenges. Ich selbst nehme seit über 10 Jahren an diversen Programmierwettbewerben, Hackathons und Challenges teil. Heute helfe ich selbst bei der organisation. Ein paar Hard Facts zu mir:</p>
+                        <ul>
+                            <li class="mb-2">Mehrjährige Erfahrung als Data Scientist und Softwareentwickler</li>
+                            <li class="mb-2">Ich habe ein Talent komplexe Sachverhalte einfach darzustellen</li>
+                            <li class="mb-2">Berufserfahrung sohwohl in der Industrie als auch in der Forschung</li>
+                        </ul>
+                        <a class="btn btn-primary text-uppercase mt-4" href="/assets/cv.pdf" download="cv.pdf">Download CV</a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 profile-col text-center">
+                        <img class="profile-image" src="assets/img/freelance_me.jpg" alt="..." />
+                        <div class="mb-4"></div>
+                        <div class="icon-container">
+                            <a href="https://github.com/tobirohrer"><i class="bi-linkedin fs-1 text-primary"></i></a>
+                        </div>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/tobirohrer/"><i class="bi-github fs-1 text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Grid-->
+            </div>
+        </section>
+        <section class="page-section" id="portfolio">
             <div class="container">
                 <div class="text-center"></div>
                 <h2 class="text-center mt-0">Durchgeführte Hackathons</h2>
@@ -103,51 +130,38 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 mb-4">
                         <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#transnetModal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/transnet.jpg" alt="..." />
-                            </a>
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#transnetModal" style="font-family: inherit; font-weight: inherit; text-decoration: none; color: inherit">
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Anomalieerkennung im europäischen Stromübertragungsnetz</div>
-                                    <div class="portfolio-caption-subheading text-muted">Anomalieerkennung in einem der weltweit größsten Systemen zur Echtzeitoptimierung von Energieflüssen.</div>
-                                </div>
-                            </a>
+                        <div class="portfolio-item card">
+                            <img class="card-img-top" src="assets/img/portfolio/transnet.jpg" alt="..." />
+                            <div class="card-body">
+                                <h3 class="card-heading">Anomalieerkennung im europäischen Stromübertragungsnetz</h3>
+                                <div class="card-text text-muted">Anomalieerkennung in einem der weltweit größsten Systemen zur Echtzeitoptimierung von Energieflüssen.</div>
+                                <a class="btn btn-primary text-uppercase mt-4" data-bs-toggle="modal" href="#transnetModal">Mehr Erfahren</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#stadtwerkeModal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/stadtwerke.jpg" alt="..." />
-                            </a>
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#stadtwerkeModal" style="font-family: inherit; font-weight: inherit; text-decoration: none; color: inherit">
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Vorhersage von Elektrizitätslasten</div>
-                                    <div class="portfolio-caption-subheading text-muted">Vorhersage von Erzeugung und Verbrauch von Elektrizität.</div>
-                                </div>
-                            </a>
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item card">
+                            <img class="card-img-top" src="assets/img/portfolio/stadtwerke.jpg" alt="..." />
+                            <div class="card-body">
+                                <h3 class="card-heading">Vorhersage von Elektrizitätslasten</h3>
+                                <div class="card-text text-muted">Vorhersage von Erzeugung und Verbrauch von Elektrizität für die Stadtwerke Kassel.</div>
+                                <a class="btn btn-primary text-uppercase mt-4" data-bs-toggle="modal" href="#stadtwerkeModal">Mehr Erfahren</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4"></div>
                 </div>
             </div>
         </section>
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <section class="page-section bg-light" id="contact">
             <div class="container">
                 <div class="text-center"></div>
                 <h2 class="text-center mt-0">Kontakt</h2>
                 <hr class="divider" />
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0 mx-auto">
-                        <div class="card py-4 h-100 contact-card">
+                        <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="bi-envelope fs-1 text-primary"></i>
                                 <h4 class="m-0">E-Mail</h4>
@@ -157,7 +171,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0 mx-auto">
-                        <div class="card py-4 h-100 contact-card">
+                        <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="bi-phone fs-1 text-primary"></i>
                                 <h4 class="m-0">Handynummer</h4>
