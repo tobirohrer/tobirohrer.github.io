@@ -103,9 +103,10 @@
                     <div class="col-lg-6 col-sm-12 profile-col">
                         <p class="m-b2">Ich habe eine große Leidenschaft für Hackathons und Challenges. Ich selbst nehme seit über 10 Jahren an diversen Programmierwettbewerben, Hackathons und Challenges teil. Heute helfe ich selbst bei der Organisation. Ein paar Infos zu mir:</p>
                         <ul>
-                            <li class="mb-2">Mehrjährige Berufserfahrung als Data Scientist und Softwareentwickler</li>
-                            <li class="mb-2">Berufserfahrung sohwohl in der Industrie als auch in Academia</li>
-                            <li class="mb-2">Mein derzeitiger fachlicher Fokus liegt auf der Schnittstelle zwischen Machine Learning und Themen rund um die Energiewende</li>
+                            <li class="mb-2">Meine Erfahrung in der Softwareentwicklung ermöglicht mir die Unterstützung bei der Prototypenentwicklung auf Hackathons.</li>
+                            <li class="mb-2">Als Data Scientist bin ich darauf spezialisiert, komplexe Lösungen zu bewerten und zu entwickeln.</li>
+                            <li class="mb-2">Ich habe Berufserfahrung sowohl in der Industrie als auch in der Academia.</li>
+                            <li class="mb-2">Mein fachlicher Fokus liegt derzeit auf der Schnittstelle zwischen Machine Learning und der Energiewende.</li>
                         </ul>
                         <a class="btn btn-primary text-uppercase mt-4" href="/assets/cv.pdf" download="cv.pdf">Download CV</a>
                     </div>
@@ -129,10 +130,11 @@
                 <h2 class="text-center mt-0">Durchgeführte Hackathons</h2>
                 <hr class="divider" />
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-sm-12 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item card">
                             <img class="card-img-top" src="assets/img/portfolio/transnet.jpg" alt="..." />
+                            <div class="divider"></div>
                             <div class="card-body">
                                 <h3 class="card-heading">Anomalieerkennung im europäischen Stromübertragungsnetz</h3>
                                 <div class="card-text text-muted">Anomalieerkennung in einem der weltweit größsten Systemen zur Echtzeitoptimierung von Energieflüssen.</div>
@@ -140,14 +142,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-sm-12 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item card">
                             <img class="card-img-top" src="assets/img/portfolio/stadtwerke.jpg" alt="..." />
+                            <div class="divider"></div>
                             <div class="card-body">
                                 <h3 class="card-heading">Vorhersage von Elektrizitätslasten</h3>
                                 <div class="card-text text-muted">Vorhersage von Erzeugung und Verbrauch von Elektrizität für die Stadtwerke Kassel.</div>
                                 <a class="btn btn-primary text-uppercase mt-4" data-bs-toggle="modal" href="#stadtwerkeModal">Mehr Erfahren</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item card">
+                            <img class="card-img-top" src="assets/img/portfolio/ai_grid.png" alt="..." />
+                            <div class="divider"></div>
+                            <div class="card-body">
+                                <h3 class="card-heading">AI Grid Summer School</h3>
+                                <div class="card-text text-muted">Beim Hackathon wurden drei Use Cases bearbeitet: Elektrizitätslastvorhersage, KI-Tourenplaner und automatisierte Grünflächenerkennung.</div>
+                                <a class="btn btn-primary text-uppercase mt-4" data-bs-toggle="modal" href="#aigridModal">Mehr Erfahren</a>
                             </div>
                         </div>
                     </div>
@@ -277,6 +292,45 @@
                                         </li>
                                     </ul>
                                     <a class="btn btn-primary btn-xl text-uppercase" href="https://www.kaggle.com/competitions/ai-serving-grid-stability">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Zum Hackathon
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="aigridModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" width="50px" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Hackathon auf der AI Grid Summer School</h3>
+                                    <p class="item-intro text-muted"></p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ai_grid.png" alt="..." width="400px" />
+                                    <p>Im Rahmen der AI Grid Summer School habe ich einen spannenden Hackathon organisiert, der sich über vier Tage erstreckte und auf der malerischen Insel Rügen stattfand. Bei diesem Event arbeiteten 28 promovierende Teilnehmer aus dem AI-Grid Netzwerk an drei innovativen Use Cases:</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>KI-basierter Planungsassistent:</strong>
+                                            Teilnehmende haben für die Tourismusbehörde in Mecklenburg-Vorpommern mehrere Chatbots entwickelt, die Touristen bei der Planung ihres Tages unterstützen.
+                                        </li>
+                                        <li>
+                                            <strong>Algorithmus zur Erkennung von Grünflächen:</strong>
+                                            Grünflächen sind wichtig für das Wohlfühlen in Städten. Mit einer ausgefeilten Computer-Vision-Pipeline haben sich die Teilnehmenden der Herausforderung der automatisierten Erkennung von Grünflächen auf Satellitenbildern angenommen.
+                                        </li>
+                                        <li>
+                                            <strong>Datensatz zur Vorhersage von Elektrizitätslasten:</strong>
+                                            Genaue Vorhersagen von Elektrizitätslasten sind entscheidend für das Gelingen der Energiewende. Den Teilnehmenden wurde ein Datensatz vom Karlsruhe Institute of Technology (KIT) bereitgestellt, mit dem sie sich der Herausforderung der Lastvorhersage gewidmet haben.
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="https://tobirohrer.github.io/ai-grid-hackathon/">
                                         <i class="fas fa-xmark me-1"></i>
                                         Zum Hackathon
                                     </a>

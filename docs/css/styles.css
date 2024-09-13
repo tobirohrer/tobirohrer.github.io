@@ -11016,6 +11016,19 @@ header.mastsubhead {
   padding-bottom: calc(10rem - 4.5rem);
 }
 
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.divider {
+  height: 0.8px;
+  background-color: #808080;
+  margin: 0 0;
+}
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;

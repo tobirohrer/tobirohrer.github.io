@@ -1,0 +1,31 @@
+// Portfolio item 1 modal popup
+#aigridModal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .close-modal(data-bs-dismiss='modal')
+                img(src='assets/img/close-icon.svg', alt='Close modal', width='50px')
+            .container
+                .row.justify-content-center
+                    .col-lg-8
+                        .modal-body
+                            // Project details
+                            h3.text-uppercase Hackathon auf der AI Grid Summer School
+                            p.item-intro.text-muted 
+                            img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/ai_grid.png', alt='...', width='400px')
+                            p Im Rahmen der AI Grid Summer School habe ich einen spannenden Hackathon organisiert, der sich über vier Tage erstreckte und auf der malerischen Insel Rügen stattfand. Bei diesem Event arbeiteten 28 promovierende Teilnehmer aus dem AI-Grid Netzwerk an drei innovativen Use Cases:
+                            
+                            ul.list-inline
+                                li
+                                    strong KI-basierter Planungsassistent:
+                                    | Teilnehmende haben für die Tourismusbehörde in Mecklenburg-Vorpommern mehrere Chatbots entwickelt, die Touristen bei der Planung ihres Tages unterstützen.
+                                li
+                                    strong Algorithmus zur Erkennung von Grünflächen: 
+                                    | Grünflächen sind wichtig für das Wohlfühlen in Städten. Mit einer ausgefeilten Computer-Vision-Pipeline haben sich die Teilnehmenden der Herausforderung der automatisierten Erkennung von Grünflächen auf Satellitenbildern angenommen.
+                                li
+                                    strong Datensatz zur Vorhersage von Elektrizitätslasten: 
+                                    | Genaue Vorhersagen von Elektrizitätslasten sind entscheidend für das Gelingen der Energiewende. Den Teilnehmenden wurde ein Datensatz vom Karlsruhe Institute of Technology (KIT) bereitgestellt, mit dem sie sich der Herausforderung der Lastvorhersage gewidmet haben.
+
+
+                            a.btn.btn-primary.btn-xl.text-uppercase(href='https://tobirohrer.github.io/ai-grid-hackathon/')
+                                i.fas.fa-xmark.me-1
+                                | Zum Hackathon

@@ -2,6 +2,19 @@
 // Portfolio section styling
 //
 
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+// Erstellen des Divider-Strichs
+.divider {
+    height: 0.8px;
+    background-color: #808080; // Gleiche Farbe wie der Card-Body
+    margin: 0 0; // Abstand oben und unten
+}
+
 #portfolio {
     .portfolio-item {
         max-width: 26rem;

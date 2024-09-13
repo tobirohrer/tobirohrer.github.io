@@ -1,6 +1,6 @@
 doctype html
 html(lang='en')
-
+    
     head
 
         meta(charset='utf-8')
@@ -104,9 +104,10 @@ html(lang='en')
                     .col-lg-6.col-sm-12.profile-col
                         p.m-b2 Ich habe eine große Leidenschaft für Hackathons und Challenges. Ich selbst nehme seit über 10 Jahren an diversen Programmierwettbewerben, Hackathons und Challenges teil. Heute helfe ich selbst bei der Organisation. Ein paar Infos zu mir:
                         ul
-                            li.mb-2 Mehrjährige Berufserfahrung als Data Scientist und Softwareentwickler
-                            li.mb-2 Berufserfahrung sohwohl in der Industrie als auch in Academia
-                            li.mb-2 Mein derzeitiger fachlicher Fokus liegt auf der Schnittstelle zwischen Machine Learning und Themen rund um die Energiewende
+                            li.mb-2 Meine Erfahrung in der Softwareentwicklung ermöglicht mir die Unterstützung bei der Prototypenentwicklung auf Hackathons.
+                            li.mb-2 Als Data Scientist bin ich darauf spezialisiert, komplexe Lösungen zu bewerten und zu entwickeln.
+                            li.mb-2 Ich habe Berufserfahrung sowohl in der Industrie als auch in der Academia.
+                            li.mb-2 Mein fachlicher Fokus liegt derzeit auf der Schnittstelle zwischen Machine Learning und der Energiewende.
 
                         a.btn.btn-primary.text-uppercase.mt-4(href='/assets/cv.pdf', download='cv.pdf')
                                     | Download CV
@@ -128,23 +129,35 @@ html(lang='en')
                 h2.text-center.mt-0 Durchgeführte Hackathons
                 hr.divider
                 .row
-                    .col-lg-6.col-sm-12.mb-4
+                    .col-lg-4.col-sm-12.mb-4
                         // Portfolio item 1
                         .portfolio-item.card
                             img.card-img-top(src='assets/img/portfolio/transnet.jpg', alt='...')
+                            .divider
                             .card-body
                                 h3.card-heading Anomalieerkennung im europäischen Stromübertragungsnetz
                                 .card-text.text-muted Anomalieerkennung in einem der weltweit größsten Systemen zur Echtzeitoptimierung von Energieflüssen.
                                 a.btn.btn-primary.text-uppercase.mt-4(data-bs-toggle='modal', href='#transnetModal')
                                     | Mehr Erfahren
-                    .col-lg-6.col-sm-12.mb-4
+                    .col-lg-4.col-sm-12.mb-4
                         // Portfolio item 1
                         .portfolio-item.card
                             img.card-img-top(src='assets/img/portfolio/stadtwerke.jpg', alt='...')
+                            .divider
                             .card-body
                                 h3.card-heading Vorhersage von Elektrizitätslasten
                                 .card-text.text-muted Vorhersage von Erzeugung und Verbrauch von Elektrizität für die Stadtwerke Kassel.
                                 a.btn.btn-primary.text-uppercase.mt-4(data-bs-toggle='modal', href='#stadtwerkeModal')
+                                    | Mehr Erfahren
+                    .col-lg-4.col-sm-12.mb-4
+                        // Portfolio item 1
+                        .portfolio-item.card
+                            img.card-img-top(src='assets/img/portfolio/ai_grid.png', alt='...')
+                            .divider
+                            .card-body
+                                h3.card-heading AI Grid Summer School
+                                .card-text.text-muted Beim Hackathon wurden drei Use Cases bearbeitet: Elektrizitätslastvorhersage, KI-Tourenplaner und automatisierte Grünflächenerkennung.
+                                a.btn.btn-primary.text-uppercase.mt-4(data-bs-toggle='modal', href='#aigridModal')
                                     | Mehr Erfahren
 
         // Contact
@@ -184,6 +197,7 @@ html(lang='en')
         // Portfolio Modals
         include includes/stadtwerke
         include includes/transnetbw
+        include includes/ai_grid
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
